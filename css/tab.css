@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'myFirstFont';
+    src: url('../../font/方正狂草.ttf');
+}
+
+body {
+    font-family: myFirstFont;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.cf:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.container {
+    margin: 40px auto 0;
+    width: 840px;
+}
+
+.tab {
+    width: 100%;
+}
+
+#tabNav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#tabNav li {
+    text-align: center;
+    float: left;
+    padding: 5px 10px;
+    font-size: 30px;
+    line-height: 40px;
+    background: #444348;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+#tabNav li.cur {
+    background: #ef9a19;
+    color: #fff
+}
+
+#tabBox {
+    margin-top: 20px;
+    padding: 20px 0 0 0;
+    background: url(../images/abtline.jpg) left top no-repeat;
+}
+
+#tabBox div {
+    display: none
+}
+
+#tabBox div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tabBox div ul li {
+    float: left;
+    width: 840px;
+    height: 67px;
+    background: url(../images/abt3Arrow.jpg) top no-repeat;
+    padding-bottom: 10px;
+}
+
+#tabBox div ul li .time {
+  display: inline-block;
+    font-size: 14px;
+    width: 60px;
+    height: 67px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#tabBox div ul li .time span {
+    font-size: 24px;
+    color: #0fc2fd;
+}
+
+#tabBox div ul li .timeron {
+  display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 720px;
+    height: 57px;
+}
+
+#tabBox div:first-child {
+    display: block
+}
